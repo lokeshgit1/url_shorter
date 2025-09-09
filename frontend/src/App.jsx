@@ -6,7 +6,7 @@ export default function App() {
 
   const handleShortenUrl = async (e) => {
     //e.preventDefault(); // prevent page reload
-   axios.post('https://url-shorter-pi.vercel.app/api/short', { originalUrl })
+   axios.post('https://url-shorter-n424.onrender.com/api/short', { originalUrl })
    .then((res)=>{
     setShortUrl(res.data);
     console.log('"api response"',res.data);
