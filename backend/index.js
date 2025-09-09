@@ -40,7 +40,7 @@ app.post('/api/short', async (req, res) => {
 
     const shortUrl = nanoid(8);
     const newUrl = new Url({ originalUrl, shortUrl });
-    const myurl = `http://localhost:8080/${shortUrl}`;
+    const myurl = `https://url-shorter-pi.vercel.app/${shortUrl}`;
     const qrCodeimg = await QRCode.toDataURL(myurl);
     await newUrl.save();
 
